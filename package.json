@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-eventbrite",
+  "version": "0.1.0",
+  "description": "Eventbrite MCP.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-eventbrite": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "eventbrite"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-eventbrite.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-5c019169e94d61f2120a36587d264f1462c0651c57fb11724fab4d014ec94c6c",
+    "sourceCommit": "4f465027cf3de54acf4976d8118ae3423a8ec9fa"
+  }
+}
