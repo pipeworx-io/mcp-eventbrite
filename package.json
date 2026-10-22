@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-eventbrite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Eventbrite MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-5c019169e94d61f2120a36587d264f1462c0651c57fb11724fab4d014ec94c6c",
-    "sourceCommit": "4f465027cf3de54acf4976d8118ae3423a8ec9fa"
+    "sourceHash": "v1-c5ef3b6ccdaad5158401568ee8ce563c61a4a81fe2e47c17229d7f45cd10214c",
+    "sourceCommit": "712a5e0171ea24483214329d0cd7efdfd9b80352"
   }
 }

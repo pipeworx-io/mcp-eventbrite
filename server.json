@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/eventbrite",
   "title": "Eventbrite",
   "description": "Eventbrite MCP.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/eventbrite",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-eventbrite",
