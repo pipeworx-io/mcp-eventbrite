@@ -1,0 +1,46 @@
+[
+  {
+    "name": "eventbrite_city_events",
+    "description": "Find upcoming Eventbrite events in a city, optionally filtered by category and/or keyword. Reads Eventbrite's own public event-discovery pages (the same data a browser gets at eventbrite.com/d/<city>/...). Returns event name, time, venue, a ticket URL, and category tags. Does not include attendee/guest lists. A typo'd category silently falls back to all categories for that city — check `category_applied` in the response.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string",
+          "description": "City, free text, e.g. \"San Francisco\", \"San Francisco, CA\", \"London\", \"Austin, TX\". Matched against Eventbrite's own place lookup."
+        },
+        "category": {
+          "type": "string",
+          "description": "Eventbrite category slug, e.g. \"music\", \"food-and-drink\", \"business\", \"community\", \"health\". Unrecognized slugs are ignored by Eventbrite (falls back to all categories) rather than erroring."
+        },
+        "keyword": {
+          "type": "string",
+          "description": "Free-text keyword to filter events, e.g. \"jazz\", \"half marathon\"."
+        },
+        "page": {
+          "type": "number",
+          "description": "Page number, 1-based (default 1, 20 events/page)."
+        }
+      },
+      "required": [
+        "city"
+      ]
+    }
+  },
+  {
+    "name": "eventbrite_event",
+    "description": "Get full detail for one Eventbrite event by its numeric event id: description, start/end time, venue, organizer, and ticket price range/availability. Does not include attendee/guest lists.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "description": "Numeric Eventbrite event id, e.g. \"1996763292760\". Found in event URLs (the trailing digits) or in eventbrite_city_events results (`id`)."
+        }
+      },
+      "required": [
+        "event_id"
+      ]
+    }
+  }
+]
