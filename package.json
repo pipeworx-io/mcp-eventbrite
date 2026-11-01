@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-eventbrite",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Eventbrite MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "eventbrite",
     "gatewaySlug": "eventbrite",
-    "sourceHash": "v1-9e17f49fbbb61d717fcdd96210b60923e52564a85c34744f38f998ec50a04c12",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-e95cb4833e41588fc887cd0fc9b00349b4068ea5cad9d435ff48f5ac6bd0f238",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
